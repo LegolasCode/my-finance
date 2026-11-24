@@ -1,0 +1,54 @@
+/* =====================================================================
+   DESIGN SYSTEM — COMIC / POP-ART  ·  TOKEN (satu-satunya tempat yang perlu Anda ubah)
+   Ganti nilai di bawah ini, seluruh aplikasi ikut berubah. Tidak perlu menyentuh komponen.
+   ===================================================================== */
+:root {
+  /* ---------- 1. PALET WARNA (ubah kode hex di sini) ---------- */
+  --c-paper:     #FFFDF5; /* Background utama — Comic Paper Cream      */
+  --c-surface:   #FFFFFF; /* Kartu / permukaan — Pure Ink White         */
+  --c-ink:       #18181B; /* Border, bayangan & teks — Comic Ink Black  */
+  --c-primary:   #FFD600; /* Aksen utama — Electric Comic Yellow        */
+  --c-secondary: #38BDF8; /* Aksen sekunder — Hero Sky Blue             */
+  --c-income:    #4ADE80; /* Pemasukan — Mint Pop Green                 */
+  --c-expense:   #FF5E5B; /* Pengeluaran & peringatan — Action Coral    */
+  --c-accent:    #C084FC; /* Kategori tambahan — Retro Lilac Purple     */
+
+  /* ---------- 2. TURUNAN OTOMATIS (hasil campuran warna di atas; biasanya tidak perlu diubah) ---------- */
+  --c-muted:    color-mix(in srgb, var(--c-ink) 62%, var(--c-surface)); /* teks sekunder      */
+  --c-soft:     color-mix(in srgb, var(--c-ink) 6%, var(--c-surface));  /* latar halus / hover */
+  --c-line:     color-mix(in srgb, var(--c-ink) 16%, var(--c-surface)); /* garis pemisah tipis */
+  --c-halftone: color-mix(in srgb, var(--c-ink) 13%, transparent);      /* titik halftone      */
+
+  /* Warna grafik (urutan irisan pie / seri) */
+  --c-chart-1: var(--c-secondary);
+  --c-chart-2: var(--c-primary);
+  --c-chart-3: var(--c-accent);
+  --c-chart-4: var(--c-income);
+  --c-chart-5: var(--c-expense);
+  --c-chart-6: color-mix(in srgb, var(--c-secondary) 50%, var(--c-surface));
+  --c-chart-7: color-mix(in srgb, var(--c-accent) 50%, var(--c-surface));
+  --c-chart-8: color-mix(in srgb, var(--c-income) 50%, var(--c-surface));
+
+  /* ---------- 3. BORDER & BAYANGAN ---------- */
+  --border-w: 3px;          /* garis tebal: kartu, tombol, modal            */
+  --border-w-thin: 2px;     /* garis tipis: input, badge, progress          */
+  --shadow-offset: 4px;     /* bayangan tombol/kartu kecil. Efek tekan menggeser sejauh nilai ini */
+  --shadow-offset-lg: 6px;  /* bayangan kartu besar                          */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  /* ---------- 4. TEKSTUR HALFTONE (titik-titik cetak komik) ---------- */
+  --halftone-size: 14px;    /* jarak antar titik pada latar halaman          */
+  --halftone-dot: 1.2px;    /* ukuran titik pada latar halaman               */
+  --halftone-card-size: 8px;/* jarak titik pada header kartu / kartu saldo   */
+
+  /* ---------- 5. TIPOGRAFI ---------- */
+  --font-display: 'Bangers', 'Impact', 'Arial Black', sans-serif;               /* judul & angka besar */
+  --font-body:    'Space Grotesk', ui-sans-serif, system-ui, sans-serif;        /* teks umum           */
+  --font-mono:    'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace; /* nominal transaksi   */
+}
+
+@media (max-width: 640px) {
+  :root { --shadow-offset-lg: 5px; --halftone-size: 12px; }
+}

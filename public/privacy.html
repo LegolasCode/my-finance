@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kebijakan Privasi — Pengatur Keuangan</title>
+  <style>
+    body { font-family: 'Space Grotesk', system-ui, sans-serif; background: #FFFDF5; color: #18181B; margin: 0; padding: 1.5rem; line-height: 1.6; }
+    main { max-width: 42rem; margin: 0 auto; background: #fff; border: 3px solid #18181B; border-radius: 16px; box-shadow: 6px 6px 0 #18181B; padding: 1.5rem 1.75rem; }
+    h1 { font-family: Bangers, Impact, sans-serif; letter-spacing: .04em; text-transform: uppercase; background: #FFD600; display: inline-block; padding: .1rem .6rem; border: 3px solid #18181B; }
+    h2 { margin-top: 1.5rem; } a { color: #18181B; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Kebijakan Privasi</h1>
+    <p><strong>Pengatur Keuangan</strong> adalah aplikasi web pencatat keuangan pribadi. Terakhir diperbarui: November 2026.</p>
+
+    <h2>Data apa yang diakses</h2>
+    <p>Saat Anda masuk dengan Google, aplikasi meminta: nama, alamat email, dan foto profil (untuk menampilkan akun Anda), serta izin Google Drive terbatas (<code>drive.file</code>) yang hanya mencakup <em>file yang dibuat oleh aplikasi ini</em>, yaitu satu spreadsheet bernama &ldquo;Pengatur Keuangan&rdquo; di Google Drive Anda.</p>
+
+    <h2>Di mana data disimpan</h2>
+    <p>Seluruh data keuangan (transaksi, budget, kategori) disimpan <strong>hanya di spreadsheet milik Anda di Google Drive Anda</strong>. Aplikasi ini tidak memiliki server atau database sendiri. Browser Anda berkomunikasi langsung dengan Google, sehingga pengembang dan pemilik aplikasi tidak menerima, menyimpan, maupun dapat membaca data Anda.</p>
+
+    <h2>Yang tersimpan di browser Anda</h2>
+    <p>Token akses Google disimpan sementara di <code>sessionStorage</code> (hilang saat tab ditutup). Alamat email dan ID spreadsheet disimpan di <code>localStorage</code> agar proses masuk berikutnya lebih cepat. Keluar dari aplikasi menghapus token sesi.</p>
+
+    <h2>Pembagian ke pihak ketiga</h2>
+    <p>Kami tidak membagikan data Anda kepada siapa pun dan tidak memakai pelacak iklan atau analitik.</p>
+
+    <h2>Mencabut akses &amp; menghapus data</h2>
+    <p>Anda dapat mencabut izin kapan saja di <a href="https://myaccount.google.com/connections" rel="noopener noreferrer">pengaturan akun Google</a>. Untuk menghapus data, hapus spreadsheet &ldquo;Pengatur Keuangan&rdquo; dari Google Drive Anda.</p>
+
+    <p style="margin-top:2rem"><a href="./">&larr; Kembali ke aplikasi</a></p>
+  </main>
+</body>
+</html>

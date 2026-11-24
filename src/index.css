@@ -1,0 +1,7 @@
+/* Urutan: token -> komponen design system -> Tailwind (utility boleh menimpa bila perlu) */
+@import './styles/theme.css';
+@import './styles/components.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
