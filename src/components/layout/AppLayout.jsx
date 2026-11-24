@@ -16,10 +16,16 @@ const linkClass = ({ isActive }) => (isActive ? 'is-active' : '');
 function Brand() {
   return (
     <div className="flex items-center gap-3">
-      <div className="brand-badge">Rp</div>
+      <img
+        src="public/my-finance-logo.webp"
+        alt="Logo My Finance"
+        className="w-11 h-11 rounded-full object-cover border-2 border-[#18181B]"
+      />
       <div>
-        <p className="comic-display text-xl uppercase leading-none">MyFinance</p>
-        <p className="text-[11px] font-bold uppercase tracking-wider comic-muted">Personal Finance Tracker</p>
+        <p className="comic-display text-xl uppercase leading-none">My Finance</p>
+        <p className="text-[11px] font-bold uppercase tracking-wider comic-muted">
+          Personal Finance Tracker
+        </p>
       </div>
     </div>
   );
