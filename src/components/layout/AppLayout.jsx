@@ -17,7 +17,7 @@ function Brand() {
   return (
     <div className="flex items-center gap-3">
       <img
-        src="public/my-finance-logo.webp"
+        src="/my-finance-logo.webp"
         alt="Logo My Finance"
         className="w-11 h-11 rounded-full object-cover border-2 border-[#18181B]"
       />
