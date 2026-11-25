@@ -39,12 +39,12 @@ export default function Login() {
         <div className="relative mx-auto mb-6 grid h-36 w-36 place-items-center">
           <div className="burst tone-ink absolute inset-0" />
           <div className="burst tone-primary absolute inset-[5px]" />
-          <span className="comic-display relative -rotate-6 text-4xl uppercase">My Finance</span>
+          <span className="comic-display relative -rotate-6 text-4xl uppercase">Hai!</span>
         </div>
 
         <div className="comic-card overflow-hidden">
           <header className="comic-card__header tone-primary justify-center text-center">
-            <h1 className="comic-title text-3xl sm:text-4xl">Pengatur Keuangan</h1>
+            <h1 className="comic-title text-3xl sm:text-4xl">My Finance</h1>
           </header>
           <div className="space-y-5 p-6">
             <p className="text-center text-sm font-medium">Catat pemasukan, pengeluaran, dan tabungan. Masuk dengan Google untuk membuka atau membuat spreadsheet pribadi Anda.</p>
